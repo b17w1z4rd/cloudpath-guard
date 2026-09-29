@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "CloudPathReadConfiguration",
+    "Effect": "Allow",
+    "Action": [
+      "sts:GetCallerIdentity",
+      "ec2:DescribeInstances",
+      "ec2:DescribeSecurityGroups",
+      "ec2:DescribeRouteTables",
+      "iam:GetInstanceProfile",
+      "iam:GetRole",
+      "iam:ListRolePolicies",
+      "iam:GetRolePolicy",
+      "iam:ListAttachedRolePolicies",
+      "iam:GetPolicy",
+      "iam:GetPolicyVersion"
+    ],
+    "Resource": "*"
+  }]
+}
